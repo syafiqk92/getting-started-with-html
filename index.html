@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - The basics of the web and HTML</title>
+
+</head>
+
+<body>
+
+  <h1>The basics of the web and HTML</h1>
+
+<h2>The web</h2>
+<p>The web, also known as <em>www</em> (which stands for world wide web) is a collection of HTML documents that make up the internet as we know today. It is linked together by <em>hyperlinks</em>.</p>
+
+<h2>Major components of the web</h2>
+<p> The webs are made up of the following components:
+<ul>
+  <li>Browser</li>
+  <li>Internet</li>
+  <li>Servers</li></ul></p>
+<p>
+In simple terms, this is how internet works. Users use browser to access files on the server. However, user cannot access the server directly. Browser needs to send request to the server and the server will respond to the request by displaying the file on the browser. The request are made using a protocol called HTTP.</p>
+<p>
+Browsers are software applications that users use to access information on the server. Examples of browsers include Safari, Google Chrome and others.</p>
+<p>
+Servers, on the other hands are computers (pretty much like my computer) that have specialised function of hosting files.</p>
+<p>
+The internet is simply a network of computers that perform a wide array of functions related to retrieving and storing information (although the list of functions that internet can do includes more than this).</p>
+<p>
+Now that we understand the basics of how internet works, let's move on to more details information on HTML.</p>
+
+<h2>HTML</h2>
+<p>HTML stands for <em>Hyper Text Markup Language</em>. The HTML pages is the core document in the web although the web can include <em>literally</em> all types of files. HTML contains text, markup, references to other documents and links to other pages.</p>
+<p>
+HTML is a markup language. Markup language is a system in which a document is annotated in such a way to allow browser to distinguish text from syntax. HTML has specific rules in annotating the text and the principle of that is by using tags.</p>
+<p>
+HTML gives instructions to web browser on how to display the text.</p>
+<p>
+HTML markup is made up of tags. The general form of tags is as follow. This whole thing can be referred to as <em><b>elements</b></em>.</p>
+<p>
+&ltname&gtcontent&lt/name&gt</p>
+<p>
+Generally, all tags require opening and closing tags. An exception to this rule is void tag. Here is an example of a void tag</p>
+<p>
+&ltimg&gt</p>
+<p>
+Next, we are going to explore on a couple of tags.</p>
+
+<h3>The &ltb&gt tag</h3>
+<p>
+  This makes the text bold. The form is as follow:</p>
+<p>
+&ltb&gtthis text is bold&lt/b&gt </p>
+<p>
+  Result: <b>this text is bold</b></p>
+
+<h3> The &ltem&gt tag</h3>
+<p>
+  This makes the text italics. The form is as follow:</p>
+<p>
+&ltem&gtthis text is italics&lt/em&gt </p>
+<p>
+Result: <em>this text is italics</em></p>
+
+<p>
+Note that any single typos can lead to big problems as computers follow instructions <em>literally</em>.</p>
+
+<h3>HTML attributes</h3>
+<p>
+Some tags can have attributes associated with them. The general form is as follow:</p>
+<p>
+&lttag attr="value"&gtthis text has tag with attributes&lt/tag&gt </p>
+<p>Some tags may have more than one attribute. One example of a tag with attribute is the <b>anchor tag</b>.</p>
+<p>
+The general form of an anchor tag is as follow:</p>
+<p>
+&lta href="ww.google.co.uk"&gtthis text is anchored to the link and will take you to google&lt/a&gt </p>
+<p>
+  Result: <a href="ww.google.co.uk">this text is anchored to the link and will take you to google</a></p>
+
+<h3>The &ltimg&gt tag</h3>
+<p>
+&ltimg&gt is an example of a void tag. Void tag do not require a closing tag. The form is as follow:</p>
+<p>
+&ltimg src="url" alt="text that is displayed when image did not load"&gt </p>
+<p>
+Result: <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Aspirin-skeletal.svg/150px-Aspirin-skeletal.svg.png" alt="chemical structure of aspirin"></p>
+
+<p>
+ It's ok to forget the tag format. All you need to do is google. Pretty much like how you get through life.</p>
+
+<h3>Whitespace</h3>
+<p>
+All spaces written in HTML code will be converted into a single space by the browser. To force add a white space, you can use &ltbr&gt tag. For example, if I want to write this sentence in multiple lines, I would put the &ltbr&gt where I want the new line to begin. If I run that sentence, this is how it's going to look. &ltbr&gt is a void tag. I can add multiple &ltbr&gt tag to make multiple line break.</p>
+<p>For example, if I want to write this sentence in multiple lines, I would put the <br> where I want the new line to begin.</p>
+<p>
+An alternative way of entering a white space is by using &ltp&gt tag. &ltp&gt tag is not a void tag so it needs a closing tag. This is the general form.</p>
+<p>
+&ltp&gtI can write this sentence in multiple line using the &ltp&gt tag.&lt/p&gt &ltp&gtIf I want to split these two sentences this is how I am going to do it.&lt/p&gt</p>
+<p> This is how it is going to look like. </p>
+<p>I can write this sentence in multiple line using the &ltp&gt tag.</p> <p>If I want to split these two sentences this is how I am going to do it.</p>
+
+<h3>In-line vs block</h3>
+<p>
+Some tags are in-line while others are block. Tags that are block makes an invisible box around the content whereas in-line just create a new line (in the case of break tag). Simply, in-line tags do not make an invisible block.</p>
+
+<h3>Container elements</h3>
+<p>
+&ltspan&gt is in-line whereas &ltdiv&gt is block. Their function is to contain the content and they may have attributes (this is useful when adding class attributes in CSS). </p>
+<p>In order to illustrate the function of &ltspan&gt and &ltdiv&gt, I am going to characterise a sentence in this paragraph. This is &ltspan&gt in action &lt/span&gt whereas this is &ltdiv&gt in action &lt/div&gt. Look at what the effects are. </p>
+<p>
+<em>This is the effects.</em> In order to illustrate the function of &ltspan&gt and &ltdiv&gt, I am going to characterise a sentence in this paragraph. This is <span> in action </span> whereas this is <div> in action </div>. Look at what the effects are. </p>
+
+<h3>The structure of HTML documents</h3>
+<p> This is how a complete HTML documents look like.</p>
+<p>
+&lt!DOCTYPE HTML&gt
+&lthtml&gt<br>
+&lthead&gt<br>
+  &nbsp&nbsp&nbsp&lttitle&gt<b>title</b>&lt/title&gt<br>
+&lt/head&gt<br>
+&ltbody&gt<br>
+  &nbsp&nbsp&nbsp&ltb&gt<b>content</b>&lt/b&gt<br>
+&lt/body&gt<br>
+&lt/html&gt<br>
+</p>
+
+<p>
+Doctype is a tag that defines the HTML. HTML5 has a nice clean doctype. &ltHTML&gt tag surrounds the entire document. The &lthead&gt tag defines the head and it may contain meta data, java script and CSS source code. The body tag is the content of the document.</p>
+
+<p>
+  To conclude this note, here is the link to <a href="http://learn-2-code.appspot.com">Andy's note</a> for reference.</p>
+
+</body>
+
+</html>
